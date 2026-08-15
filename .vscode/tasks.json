@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Odin: Run Project",
+      "type": "shell",
+      "command": "odin run . -file",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "clear": true,
+        "focus": true
+      }
+    },
+    {
+      "label": "Odin: Build Release",
+      "type": "shell",
+      "command": "odin build . -file -o:speed",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
