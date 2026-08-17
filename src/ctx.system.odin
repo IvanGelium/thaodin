@@ -12,7 +12,7 @@ init_game :: proc(ctx: ^Game_Context) {
 		buffer_size   = 2048,
 		bit_depth     = .B32,
 		channels      = 2,
-		master_volume = 0.3,
+		master_volume = 0.5,
 	}
 	audio_init(ctx, audio_cfg)
 }

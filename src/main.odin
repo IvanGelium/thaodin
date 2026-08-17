@@ -40,67 +40,67 @@ main :: proc() {
 	offset += 30
 	for !rl.WindowShouldClose() {
 		if rl.IsKeyPressed(.Q) {
-			play_piano(&ctx, Tone{.C, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.C, 5})
 		}
 		if rl.IsKeyPressed(.W) {
-			play_piano(&ctx, Tone{.D, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.D, 5})
 		}
 		if rl.IsKeyPressed(.E) {
-			play_piano(&ctx, Tone{.E, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.E, 5})
 		}
 		if rl.IsKeyPressed(.R) {
-			play_piano(&ctx, Tone{.F, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.F, 5})
 		}
 		if rl.IsKeyPressed(.T) {
-			play_piano(&ctx, Tone{.G, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.G, 5})
 		}
 		if rl.IsKeyPressed(.Y) {
-			play_piano(&ctx, Tone{.A, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.A, 5})
 		}
 		if rl.IsKeyPressed(.U) {
-			play_piano(&ctx, Tone{.B, 5})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.B, 5})
 		}
 		if rl.IsKeyPressed(.ONE) {
-			play_piano(&ctx, Tone{.C, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.C, 6})
 		}
 		if rl.IsKeyPressed(.TWO) {
-			play_piano(&ctx, Tone{.D, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.D, 6})
 		}
 		if rl.IsKeyPressed(.THREE) {
-			play_piano(&ctx, Tone{.E, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.E, 6})
 		}
 		if rl.IsKeyPressed(.FOUR) {
-			play_piano(&ctx, Tone{.F, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.F, 6})
 		}
 		if rl.IsKeyPressed(.FIVE) {
-			play_piano(&ctx, Tone{.G, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.G, 6})
 		}
 		if rl.IsKeyPressed(.SIX) {
-			play_piano(&ctx, Tone{.A, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.A, 6})
 		}
 		if rl.IsKeyPressed(.SEVEN) {
-			play_piano(&ctx, Tone{.B, 6})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.B, 6})
 		}
 		if rl.IsKeyPressed(.Z) {
-			play_piano(&ctx, Tone{.C, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.C, 2})
 		}
 		if rl.IsKeyPressed(.X) {
-			play_piano(&ctx, Tone{.D, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.D, 2})
 		}
 		if rl.IsKeyPressed(.C) {
-			play_piano(&ctx, Tone{.E, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.E, 2})
 		}
 		if rl.IsKeyPressed(.V) {
-			play_piano(&ctx, Tone{.F, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.F, 2})
 		}
 		if rl.IsKeyPressed(.B) {
-			play_piano(&ctx, Tone{.G, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.G, 2})
 		}
 		if rl.IsKeyPressed(.N) {
-			play_piano(&ctx, Tone{.A, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.A, 2})
 		}
 		if rl.IsKeyPressed(.M) {
-			play_piano(&ctx, Tone{.B, 2})
+			play_instrument(&ctx, &ctx.audio.instruments["piano"], &Tone{.B, 2})
 		}
 
 		audio_update(&ctx)
